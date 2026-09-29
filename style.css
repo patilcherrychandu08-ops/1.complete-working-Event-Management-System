@@ -1,0 +1,676 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f5f7fb;
+
+    color: #222;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 18px 7%;
+
+    background: #111827;
+
+    color: white;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.logo {
+
+    font-size: 24px;
+
+    font-weight: bold;
+}
+
+
+.navbar nav {
+
+    display: flex;
+
+    gap: 25px;
+}
+
+
+.navbar nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+
+.navbar nav a:hover {
+
+    color: #60a5fa;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+    min-height: 520px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 50px 20px;
+
+    background:
+        linear-gradient(
+            rgba(17, 24, 39, 0.85),
+            rgba(30, 64, 175, 0.85)
+        ),
+        linear-gradient(135deg, #2563eb, #7c3aed);
+
+    color: white;
+}
+
+
+.hero-content {
+
+    max-width: 750px;
+}
+
+
+.hero h1 {
+
+    font-size: 52px;
+
+    margin-bottom: 20px;
+}
+
+
+.hero p {
+
+    font-size: 19px;
+
+    margin-bottom: 30px;
+
+    color: #e5e7eb;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn {
+
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    background: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.btn:hover {
+
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 80px 0;
+}
+
+
+.section h2 {
+
+    text-align: center;
+
+    font-size: 36px;
+
+    color: #111827;
+
+    margin-bottom: 10px;
+}
+
+
+.section-description {
+
+    text-align: center;
+
+    color: #6b7280;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-container {
+
+    max-width: 600px;
+
+    margin: 0 auto 40px;
+}
+
+
+.search-container input {
+
+    width: 100%;
+
+    padding: 15px 18px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    background: white;
+}
+
+
+.search-container input:focus {
+
+    border-color: #2563eb;
+
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
+/* =========================
+   EVENT CARDS
+========================= */
+
+.event-container {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 25px;
+}
+
+
+.event-card {
+
+    background: white;
+
+    border-radius: 15px;
+
+    padding: 25px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+
+    border: 1px solid #e5e7eb;
+}
+
+
+.event-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+.event-icon {
+
+    font-size: 45px;
+
+    margin-bottom: 10px;
+}
+
+
+.event-card h3 {
+
+    font-size: 22px;
+
+    color: #111827;
+
+    margin-bottom: 12px;
+}
+
+
+.event-card p {
+
+    color: #6b7280;
+
+    margin-bottom: 8px;
+}
+
+
+.event-info {
+
+    margin: 15px 0;
+}
+
+
+.event-info span {
+
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #374151;
+}
+
+
+.register-event-btn {
+
+    width: 100%;
+
+    margin-top: 12px;
+}
+
+
+/* =========================
+   REGISTRATION FORM
+========================= */
+
+.register-section {
+
+    max-width: 800px;
+}
+
+
+#registrationForm {
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+.form-group {
+
+    margin-bottom: 20px;
+}
+
+
+.form-group label {
+
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+
+    color: #374151;
+}
+
+
+.form-group input,
+.form-group select {
+
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+
+.form-group input:focus,
+.form-group select:focus {
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
+.submit-btn {
+
+    width: 100%;
+}
+
+
+.success-message {
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    font-weight: bold;
+
+    color: #16a34a;
+}
+
+
+/* =========================
+   STATISTICS
+========================= */
+
+.stats {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-bottom: 40px;
+}
+
+
+.stat-card {
+
+    width: 220px;
+
+    padding: 25px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.07);
+}
+
+
+.stat-card span {
+
+    font-size: 35px;
+}
+
+
+.stat-card h3 {
+
+    font-size: 30px;
+
+    color: #2563eb;
+}
+
+
+.stat-card p {
+
+    color: #6b7280;
+}
+
+
+/* =========================
+   REGISTRATION LIST
+========================= */
+
+.registration-list {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 20px;
+}
+
+
+.registration-card {
+
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    border-left: 5px solid #2563eb;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.07);
+}
+
+
+.registration-card h3 {
+
+    margin-bottom: 8px;
+
+    color: #111827;
+}
+
+
+.registration-card p {
+
+    color: #6b7280;
+
+    margin-bottom: 5px;
+}
+
+
+.cancel-btn {
+
+    margin-top: 12px;
+
+    padding: 9px 15px;
+
+    background: #ef4444;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+
+.cancel-btn:hover {
+
+    background: #dc2626;
+}
+
+
+.no-registration {
+
+    text-align: center;
+
+    color: #6b7280;
+
+    padding: 30px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    background: #111827;
+
+    color: white;
+}
+
+
+footer h3 {
+
+    margin-bottom: 10px;
+}
+
+
+footer p {
+
+    color: #9ca3af;
+
+    margin-bottom: 5px;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    .navbar nav {
+
+        gap: 12px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .hero h1 {
+
+        font-size: 38px;
+    }
+
+
+    .hero p {
+
+        font-size: 16px;
+    }
+
+
+    .stats {
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    .stat-card {
+
+        width: 100%;
+
+        max-width: 350px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .navbar nav a {
+
+        font-size: 14px;
+    }
+
+
+    .hero h1 {
+
+        font-size: 30px;
+    }
+
+
+    .section {
+
+        width: 92%;
+
+        padding: 55px 0;
+    }
+
+
+    #registrationForm {
+
+        padding: 22px;
+    }
+
+}
